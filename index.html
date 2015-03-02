@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+	<head>
+		<title><3</title>
+		<link rel="stylesheet" href="custom.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	</head>
+<body>
+	
+	<div class="cover">
+		<center>
+			<h1 style="z-index: 1000; color: white; " class="wishing"></h1>
+		</center>
+		<div class="super-centered-container" style="margin-top:6em;">
+			<canvas id="can">Get a browser</canvas>
+
+			<div class="overlay-static">   
+				<center> 
+				<div class="inline-blocks">
+					<!-- <h2 class="twenty-one block"> </h2> -->
+					<img class="image block" src="jyoti-dp.jpg" style="margin-left: 2em"><!-- <h2 class="twenty-1 block">year</h2> -->
+				</div>
+				</center>
+				<h1 class="bday">Happy Birthday <a href="">Jyoti!</a></h1>
+			</div>
+		</div>
+
+		<div>
+			<h4 style="z-index: 1000; color: white; " class="by"></h4>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="custom.js"></script>
+
+<script>
+var text = "Happy Happy Birthday to the most amazing girl in the world!"
+
+var length = text.length;
+var timeOut;
+var character = 0;
+
+
+(function typeWriter() { 
+    timeOut = setTimeout(function() {
+        character++;
+        var type = text.substring(0, character);
+        $('.wishing').text(type);
+        typeWriter();
+        
+        if (character == length) {
+            clearTimeout(timeOut);
+            $('.by').html("all the happiness to you. much much love :) - Prank");
+        }
+        
+    }, 230);
+}());
+
+
+</script>
+</html>
