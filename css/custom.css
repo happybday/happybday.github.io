@@ -3,6 +3,20 @@
 @import url(http://fonts.googleapis.com/css?family=Cedarville+Cursive);
 @import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background:#131313;
+  overflow:hidden;
+}
+
+body{
+  background: url('../img/jyoti-cake.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .inline-blocks > .block{
   display: inline-block;
   vertical-align: baseline;
@@ -77,13 +91,7 @@
   justify-content: center;
 }
 
-html,body{
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  background:#131313;
-  overflow:hidden;
-}
+
 
 span{
   color: skyblue;
@@ -96,11 +104,7 @@ span{
   margin-bottom: 100px;
 }
 
-body{
-  background: url('../img/jyoti-cake.jpg') no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
-}
+
 
 /*
 https://farm2.staticflickr.com/1200/4552416851_cc44288c15_b.jpg*/
