@@ -66,5 +66,16 @@
 	        
 	    }, 230);
 	}());
+	
+	window.onbeforeunload = function (e) {
+	    e = e || window.event;
+	    var msg = "There's one more thing that I wanted to gift you, but its really hard to put A CHOCOLATE in a website! I will get one, when I see you! \n Promise. ;) \n Enjoy. :)";
+	    // For IE and Firefox prior to version 4
+	    if (e) {
+	        e.returnValue = msg;
+	    }
+	    // For Safari
+	     return msg;
+	};
 </script>
 </html>
